@@ -8,6 +8,6 @@ resources:
 - argo-cd.yaml
 # - base/ingress-nginx.yaml
 - prometheus-operator.yaml
-# - base/istio-operator.yaml
-# - base/istio-controlplane.yaml
-# - base/istio-addons.yaml
+- base/istio-operator.yaml
+- base/istio-controlplane.yaml
+- base/istio-addons.yaml
