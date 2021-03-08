@@ -5,7 +5,7 @@ metadata:
 spec:
   source:
     path: istio-controlplane
-    repoURL: git@github.com:BadLiveware/gitops-kustomize.git
+    repoURL: https://github.com/BadLiveware/gitops-kustomize.git
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc

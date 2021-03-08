@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     path: prometheus-operator-resources
-    repoURL: git@github.com:BadLiveware/gitops-kustomize.git
+    repoURL: https://github.com/BadLiveware/gitops-kustomize.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
