@@ -12,7 +12,7 @@ spec:
     # targetRevision: HEAD
     chart: kube-prometheus-stack
     targetRevision: 13.13.0
-    repository: https://prometheus-community.github.io/helm-charts
+    repoURL: https://prometheus-community.github.io/helm-charts
 
   destination:
     server: https://kubernetes.default.svc
