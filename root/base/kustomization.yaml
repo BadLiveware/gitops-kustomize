@@ -5,6 +5,7 @@ namespace: argocd
 
 resources:
 - root.yaml
+- cert-manager.yaml
 - argo-cd.yaml
 - argo-rollouts.yaml
 - prometheus-operator.yaml
