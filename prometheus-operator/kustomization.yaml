@@ -8,6 +8,8 @@ resources:
 - ./resources/grafana-ingress.yaml
 # - ./resources/grafana-issuer.yaml
 
+namespace: prometheus-operator
+
 generatorOptions:
   disableNameSuffixHash: true
   labels:
