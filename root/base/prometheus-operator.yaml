@@ -10,8 +10,8 @@ spec:
     # path: argocd/overlays/production
     # repoURL: https://github.com/BadLiveware/gitops-kustomize.git
     # targetRevision: HEAD
-    name: kube-prometheus-stack
-    version: 13.13.0
+    chart: kube-prometheus-stack
+    targetRevision: 13.13.0
     repository: https://prometheus-community.github.io/helm-charts
 
   destination:
