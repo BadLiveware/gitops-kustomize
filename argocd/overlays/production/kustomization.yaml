@@ -27,6 +27,7 @@ patchesJson6902:
     kind: Deployment
     name: argocd-server
     version: v1
+
 - path: ./argocd-loglevel-debug.yaml
   target:
     group: apps
@@ -37,7 +38,7 @@ patchesJson6902:
 - path: ./argocd-loglevel-debug.yaml
   target:
     group: apps
-    kind: Deployment
+    kind: StatefulSet
     name: argocd-application-controller
     version: v1
 
