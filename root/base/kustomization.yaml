@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: argocd
+
+resources:
+- root.yaml
+- argo-cd.yaml
+# - base/ingress-nginx.yaml
+- prometheus-operator.yaml
+# - base/istio-operator.yaml
+# - base/istio-controlplane.yaml
+# - base/istio-addons.yaml

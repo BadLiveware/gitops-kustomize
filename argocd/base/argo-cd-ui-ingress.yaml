@@ -1,21 +1,38 @@
-apiVersion: extensions/v1beta1
+---
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: argo-cd-ui
+  namespace: argocd
   annotations:
-    ingress.kubernetes.io/proxy-body-size: 100M
-    kubernetes.io/ingress.class: "nginx"
-    ingress.kubernetes.io/app-root: "/"
+    ingress.kubernetes.io/ssl-redirect: "false"
 spec:
-  tls:
-  - hosts:
-    - cd.apps.argoproj.io
-    secretName: argocd-secret
   rules:
-  - host: cd.apps.argoproj.io
+  - host: argocd.localhost
     http:
       paths:
       - path: /
+        pathType: Prefix
         backend:
-          serviceName: argocd-server
-          servicePort: http
+          service:
+            name: argocd-server
+            port:
+              number: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: argocd-server-grpc-ingress
+  namespace: argocd
+spec:
+  rules:
+  - host: grpc.localhost
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: argocd-server
+            port:
+              number: 443
