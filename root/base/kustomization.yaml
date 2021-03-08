@@ -6,8 +6,4 @@ namespace: argocd
 resources:
 - root.yaml
 - argo-cd.yaml
-# - base/ingress-nginx.yaml
 - prometheus-operator.yaml
-- istio-operator.yaml
-- istio-controlplane.yaml
-- istio-addons.yaml
