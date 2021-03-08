@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cert-manager
+spec:
+  project: default
+
+  destination:
+    namespace: cert-manager
+    server: https://kubernetes.default.svc
+
+  source:
+    path: cert-manager/base
+    repoURL: https://github.com/BadLiveware/gitops-kustomize.git
