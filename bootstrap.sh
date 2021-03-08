@@ -43,7 +43,7 @@ echo
 echo "Applying argo root project"
 kustomize build root/base/ | kubectl apply -f -
 
-echo
-echo "Waiting for pods..."
-# kubectl wait --for=condition=ready pods -l app.kubernetes.io/part-of=argocd -n argocd --timeout 5m 
-kubectl wait --for=condition=ready deployment -l app.kubernetes.io/part-of=argocd -n argocd --timeout 5m
+# echo
+# echo "Waiting for pods..."
+# # kubectl wait --for=condition=ready pods -l app.kubernetes.io/part-of=argocd -n argocd --timeout 5m 
+# kubectl wait --for=condition=ready deployment -l app.kubernetes.io/part-of=argocd -n argocd --timeout 5m
