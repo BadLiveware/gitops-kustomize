@@ -15,7 +15,6 @@ configMapGenerator:
   - statusbadge.enabled='true'
   - users.anonymous.enabled='true'
   - ga.trackingid='UA-105170809-6'
-  - url=https://cd.apps.argoproj.io
 
 generatorOptions:
   annotations:
