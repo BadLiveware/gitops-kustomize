@@ -21,12 +21,12 @@ generatorOptions:
     argocd.argoproj.io/compare-options: IgnoreExtraneous
 
 patchesJson6902:
-- path: ./argocd-server-deploy-command.yaml
-  target:
-    group: apps
-    kind: Deployment
-    name: argocd-server
-    version: v1
+# - path: ./argocd-server-deploy-command.yaml
+#   target:
+#     group: apps
+#     kind: Deployment
+#     name: argocd-server
+#     version: v1
 
 - path: ./argocd-loglevel-debug.yaml
   target:

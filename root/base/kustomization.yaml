@@ -4,8 +4,8 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-- root.yaml
 - cert-manager.yaml
+- root.yaml
 - argo-cd.yaml
 - argo-rollouts.yaml
 - prometheus-operator.yaml
