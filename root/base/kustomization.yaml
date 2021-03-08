@@ -6,4 +6,5 @@ namespace: argocd
 resources:
 - root.yaml
 - argo-cd.yaml
+- argo-rollouts.yaml
 - prometheus-operator.yaml
