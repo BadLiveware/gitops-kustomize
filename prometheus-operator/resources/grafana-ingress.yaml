@@ -28,6 +28,10 @@ metadata:
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
+  tls:
+  - hosts:
+      - grafana.localhost
+    secretName: grafana-tls
   rules:
   - host: grafana.localhost
     http:

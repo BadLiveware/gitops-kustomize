@@ -9,4 +9,4 @@ spec:
     kind: ClusterIssuer
   commonName: grafana.apps.argoproj.io
   dnsNames:
-  - grafana.apps.argoproj.io
+  - grafana.localhost
