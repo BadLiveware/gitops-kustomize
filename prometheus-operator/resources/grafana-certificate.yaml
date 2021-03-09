@@ -5,8 +5,8 @@ metadata:
 spec:
   secretName: grafana-tls
   issuerRef:
-    name: selfsigned-issuer
-    kind: ClusterIssuer
-  commonName: grafana.apps.argoproj.io
+    name: grafana-issuer
+    kind: Issuer
+  commonName: grafana.localhost
   dnsNames:
   - grafana.localhost
