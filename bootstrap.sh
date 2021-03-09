@@ -36,6 +36,10 @@ kubectl config use-context k3d-k3s-default
 kubectl cluster-info
 
 echo
+echo "Applying initial cert-manager install"
+kustomize build cert-manager/base/ | kubectl apply -f -
+
+echo
 echo "Applying initial argo install"
 kustomize build argocd/overlays/production/ | kubectl apply -f -
 
