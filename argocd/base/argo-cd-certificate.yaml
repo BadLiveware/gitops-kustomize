@@ -5,8 +5,8 @@ metadata:
 spec:
   secretName: argocd-secret
   issuerRef:
-    name: selfsigned-issuer
-    kind: ClusterIssuer
+    name: argocd-issuer
+    kind: Issuer
   commonName: argocd.localhost
   dnsNames:
   - argocd.localhost
