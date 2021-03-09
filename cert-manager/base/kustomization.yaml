@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: cert-manager
 
 resources:
+- ns.yaml
 - install.yaml
 # - https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.yaml
 # - issuer.yaml
