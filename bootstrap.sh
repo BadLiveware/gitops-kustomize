@@ -29,7 +29,7 @@ k3d cluster delete
 
 echo
 echo "Creating local cluster"
-k3d cluster create --api-port 6550 -p "8081:443@loadbalancer" -p "8080:80@loadbalancer" --agents 1
+k3d cluster create --api-port 6550 -p "8080:80@loadbalancer" --agents 1
 
 echo
 kubectl config use-context k3d-k3s-default
