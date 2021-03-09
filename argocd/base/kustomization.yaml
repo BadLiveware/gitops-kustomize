@@ -2,8 +2,8 @@ resources:
 - namespace.yaml
 - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 # - https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/ha/install.yaml
-- argo-cd-ui-ingress.yaml
-- argo-cd-certificate.yaml
+# - argo-cd-ui-ingress.yaml
+# - argo-cd-certificate.yaml
 # - argo-cd-issuer.yaml
 
 namespace: argocd

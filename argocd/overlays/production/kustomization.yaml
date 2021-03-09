@@ -27,4 +27,3 @@ patchesJson6902:
     kind: Deployment
     name: argocd-server
     version: v1
-
