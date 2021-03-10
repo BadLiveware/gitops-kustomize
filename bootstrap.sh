@@ -10,12 +10,6 @@ then
   rm ./get_helm.sh
 fi
 
-if ! docker -v &> /dev/null
-then
-  echo "Unable to connect to docker daemon"
-  exit 1
-fi
-
 kubectl cluster-info
 
 echo
