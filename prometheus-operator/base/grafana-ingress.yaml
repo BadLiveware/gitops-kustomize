@@ -31,7 +31,7 @@ spec:
   tls:
   - hosts:
       - grafana.localhost
-    secretName: grafana-tls
+    secretName: grafana-tls-secret
   rules:
   - host: grafana.localhost
     http:
