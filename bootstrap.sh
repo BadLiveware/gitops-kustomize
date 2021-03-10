@@ -24,7 +24,7 @@ kustomize build cert-manager/base/ | kubectl apply -f -
 
 echo
 echo "Applying initial argo install"
-kustomize build argocd/overlays/production/ | kubectl apply -f -
+kustomize build argocd/environments/production/ | kubectl apply -f -
 
 echo
 echo "Applying argo root project"

@@ -7,3 +7,11 @@ resources:
 - argo-cd-project.yaml
 
 namespace: argocd
+
+patchesJson6902:
+- path: ./argocd-server-deploy-command.yaml
+  target:
+    group: apps
+    kind: Deployment
+    name: argocd-server
+    version: v1
