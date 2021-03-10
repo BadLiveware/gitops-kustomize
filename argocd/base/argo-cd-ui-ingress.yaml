@@ -25,7 +25,7 @@ metadata:
   name: argo-cd-ui-https
   namespace: argocd
   annotations:
-    ingress.kubernetes.io/ssl-redirect: "true"
+    ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   # tls:
   # - hosts:
