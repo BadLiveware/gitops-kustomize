@@ -1,0 +1,21 @@
+resources:
+- upstream.yaml
+- argocd-metrics-servicemonitor.yaml
+- argocd-server-metrics-servicemonitor.yaml
+- argocd-repo-server-metrics-servicemonitor.yaml
+- argocd-notifications-controller-metrics-servicemonitor.yaml
+- grafana-certificate.yaml
+- grafana-ingress.yaml
+- grafana-issuer.yaml
+
+namespace: prometheus-operator
+
+generatorOptions:
+  disableNameSuffixHash: true
+  labels:
+    grafana_dashboard: argocd
+
+configMapGenerator:
+- name: argocd-dashboard-cm
+  files:
+    - dashboard.json
