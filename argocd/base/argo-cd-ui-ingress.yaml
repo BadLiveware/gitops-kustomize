@@ -27,10 +27,10 @@ metadata:
   annotations:
     ingress.kubernetes.io/ssl-redirect: "true"
 spec:
-  tls:
-  - hosts:
-    - argocd.localhost
-    secretName: argocd-tls-secret
+  # tls:
+  # - hosts:
+  #   - argocd.localhost
+  #   secretName: argocd-tls-secret
   rules:
   - host: argocd.localhost
     http:
