@@ -7,3 +7,4 @@ resources:
 patchesStrategicMerge:
 - argo-cd.yaml
 - prometheus-operator.yaml
+- root.yaml
