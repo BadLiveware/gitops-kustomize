@@ -4,4 +4,4 @@ metadata:
   name: prometheus-operator
 spec:
   source:
-    path: argocd/environments/local
+    path: prometheus-operator/environments/local
