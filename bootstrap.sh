@@ -28,7 +28,7 @@ kustomize build argocd/environments/local/ | kubectl apply -f -
 
 echo
 echo "Applying argo root project"
-kustomize build root/base/ | kubectl apply -f -
+kustomize build root/environments/local | kubectl apply -f -
 
 echo
 echo "Waiting for pods..."
