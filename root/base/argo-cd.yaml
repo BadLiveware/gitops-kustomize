@@ -6,7 +6,7 @@ spec:
   project: default
 
   source:
-    path: argocd/overlays/production
+    path: argocd/base
     repoURL: https://github.com/BadLiveware/gitops-kustomize.git
     targetRevision: HEAD
 
