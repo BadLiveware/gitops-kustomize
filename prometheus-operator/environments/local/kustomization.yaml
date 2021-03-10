@@ -1,14 +1,14 @@
 resources:
 - ../../base
 
-patchesJson6902:
-- target:
-    name: prometheus-operator-grafana
-    namespace: prometheus-operator
-    group: 
-    version: v1
-    kind: Secret
-  path: prometheus-operator-grafana-secret.yaml
+# patchesJson6902:
+# - target:
+#     name: prometheus-operator-grafana
+#     namespace: prometheus-operator
+#     group: 
+#     version: v1
+#     kind: Secret
+#   path: prometheus-operator-grafana-secret.yaml
     
 patchesStrategicMerge:
 - prometheus-operator-grafana-cm.yaml
