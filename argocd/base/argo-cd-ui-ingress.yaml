@@ -30,7 +30,7 @@ spec:
   tls:
   - hosts:
     - argocd.localhost
-    secretName: argocd-secret
+    secretName: argocd-tls-secret
   rules:
   - host: argocd.localhost
     http:
